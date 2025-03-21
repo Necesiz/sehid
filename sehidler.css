@@ -1,0 +1,107 @@
+/* Ümumi səhifənin ətrafının (pəncərəsinin) arxa planı */
+html, body {
+    height: 100%; /* Hündürlük 100% olmalıdır ki, səhifə tam əhatə etsin */
+    margin: 0; /* Kənar boşluqları sıfırlayırıq */
+    padding: 0; /* Daxili boşluqları sıfırlayırıq */
+    background-color: rgb(248, 179, 119); /* Ətrafın (pəncərənin) arxa planını qara etmək */
+    color: #fff; /* Mətnin ağ rəngdə olması */
+}
+
+/* Başlıq dizaynı */
+h1 {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+/* Buton dizaynı */
+.buttoons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50; /* Yaşıl rəng */
+    color: white; /* Mətn ağ rəngdə */
+    border: none; /* Sərhəd olmamalıdır */
+    padding: 12px 24px; /* Daxili boşluq */
+    text-align: center; /* Mətni mərkəzləşdir */
+    text-decoration: none; /* Xətt çəkməmək */
+    display: inline-block;
+    font-size: 18px; /* Mətn ölçüsü */
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 10px; /* Küncləri yuvarlaqlaşdır */
+    transition-duration: 0.4s; /* Keçid effekti */
+}
+
+button:hover {
+    background-color: #45a049; /* Hover zamanı fonun rəngi dəyişəcək */
+}
+
+/* Şəhidlər haqqında məlumatlar */
+.martyr-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 sütunlu grid */
+    gap: 15px; /* Kartlar arasında boşluq */
+}
+
+.martyr {
+    background: linear-gradient(to bottom, rgba(5, 151, 255, 0.9), rgba(240, 240, 240, 0.9));
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 14px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Kiçik ekranlar üçün uyğunlaşma */
+@media (max-width: 1024px) {
+    .martyr-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 sütun */
+    }
+}
+
+@media (max-width: 768px) {
+    .martyr-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 sütun */
+    }
+}
+
+@media (max-width: 480px) {
+    .martyr-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 sütun */
+    }
+}
+
+
+
+.martyr {
+    background: linear-gradient(to bottom, rgba(5, 151, 255, 0.9), rgba(240, 240, 240, 0.9)); /* Şəhid kartlarının fonu */
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 14px 8px rgba(0, 0, 0, 0.1); /* Kölgə effekti */
+    transition: transform 0.3s ease-in-out;
+}
+
+.martyr:hover {
+    transform: scale(1.20); /* Kartın böyüməsi */
+}
+
+.martyr h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.martyr p {
+    color: #1e1d1d;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.martyr strong {
+    color: #333;3
+        font-weight: bold}

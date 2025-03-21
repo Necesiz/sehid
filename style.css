@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: url(veb.jpg);
+    height: 100vh;
+background-size: 100% 100%;
+}
+
+.container .navbar{
+    width: 100%;
+    height: 80px;
+    background: rgba(22, 112, 214, 0.4)
+}
+
+.navbar .zəfər{
+    display: inline-block;
+    margin-left: 40%;
+    margin-top: 5px;
+
+}
+
+.navbar .zəfər a{
+    text-decoration: none;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: rgb(250, 232, 232);
+    user-select: none;
+ 
+
+}
+.navbar ul{
+    float:right;
+    margin-right: 20px;
+    margin-top: 0px;
+    user-select: none;
+ 
+}
+
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0 10px ;
+    line-height: 50px;
+    user-select: none;
+ 
+}
+.navbar ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 6px 13 px;
+    font-family: Georgia;
+    user-select: none;
+  
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background-color: #f8e30082;
+    border-radius: 2px;}
+ 
+ .container .center{
+    position: absolute;
+    top:50%;
+    left:50%;
+ transform:translate(-50%,-50%);
+ font-family: sans-serif;
+ user-select: none;
+}
+
+.center .buttoons{
+    margin: 35px 400px;
+}
+.buttoons button{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(#ffb3b3);
+     background-color: rgb(207, 96, 88);
+
+     border: solid 1px red;
+     cursor:pointer;
+     outline:none;
+     border-radius: 25px;
+
+    }
+
+    .buttoons button:hover{
+        background-color:#fff;
+    }
+ 
